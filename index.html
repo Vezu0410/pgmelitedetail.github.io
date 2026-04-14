@@ -3,76 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estética Automotiva Gabriel</title>
+  <title>PGM Elite Detail</title>
 
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #000000, #1a1a1a);
-      color: white;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at top, #0a0a0a, #000);
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      color: white;
     }
 
     .container {
-      text-align: center;
       width: 90%;
-      max-width: 400px;
+      max-width: 420px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto 20px;
+      filter: drop-shadow(0 0 20px rgba(0, 153, 255, 0.5));
     }
 
     h1 {
-      margin-bottom: 10px;
+      font-size: 22px;
+      margin-bottom: 8px;
     }
 
     p {
-      color: #ccc;
-      margin-bottom: 30px;
+      color: #aaa;
+      margin-bottom: 25px;
     }
 
     .btn {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       width: 100%;
       padding: 15px;
       margin-bottom: 15px;
+      border-radius: 12px;
       border: none;
-      border-radius: 10px;
       font-size: 16px;
       cursor: pointer;
       transition: 0.3s;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
     }
 
     .whatsapp {
-      background: #25D366;
-      color: white;
+      background: linear-gradient(135deg, #25D366, #1ebe5d);
+      box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
     }
 
     .instagram {
-      background: #E1306C;
-      color: white;
+      background: linear-gradient(135deg, #E1306C, #833AB4);
+      box-shadow: 0 0 15px rgba(225, 48, 108, 0.4);
     }
 
     .btn:hover {
       transform: scale(1.05);
-      opacity: 0.9;
+      filter: brightness(1.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>🚗 Estética Automotiva Gabriel</h1>
-    <p>Lavagem • Higienização • Enceramento</p>
 
-    <a href="https://wa.me/5541999803112?text=Olá,%20quero%20um%20orçamento" target="_blank">
-      <button class="btn whatsapp">📲 Falar no WhatsApp</button>
+    <!-- LOGO -->
+    <img src="logo.jpg" alt="PGM Elite Detail" class="logo">
+
+    <h1>PGM Elite Detail</h1>
+    <p>Estética automotiva 🚗✨</p>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/5541999803112?text=Olá,%20quero%20um%20orçamento" target="_blank" class="btn whatsapp">
+      📲 Falar no WhatsApp
     </a>
 
-    <a href="https://instagram.com/pgmelitedetail" target="_blank">
-      <button class="btn instagram">📸 Ver Instagram</button>
+    <!-- INSTAGRAM -->
+    <a href="https://instagram.com/pgmelitedetail" target="_blank" class="btn instagram">
+      📸 Ver Instagram
     </a>
+
   </div>
 </body>
 </html>
